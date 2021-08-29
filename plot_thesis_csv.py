@@ -7,7 +7,14 @@ def main(args):
     csv_file = args[0]
     data = pd.read_csv(csv_file, header=None)
     data = data.drop([ data.columns[0] ], axis=1).T
-    data.columns = [ 'GA', 'GWO', 'PSO' ]
+    data.columns = [
+        'GA',
+        'GWO (c = 2)',
+        'GWO (c = 4)',
+        'GWO (c = 8)',
+        'GWO (c = 12)',
+        'PSO'
+    ]
 
     num_rows = len(data.index)
     x_axis_labels = list(range(num_rows))
