@@ -9,10 +9,7 @@ def main(args):
     data = data.drop([ data.columns[0] ], axis=1).T
     data.columns = [
         'GA',
-        'GWO (c = 2)',
-        'GWO (c = 4)',
-        'GWO (c = 8)',
-        'GWO (c = 12)',
+        'GWO',
         'PSO'
     ]
 
