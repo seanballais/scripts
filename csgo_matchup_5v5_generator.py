@@ -10,16 +10,18 @@ def main():
     # 5 - worst
     players = [
         [ 'Sean', 4 ],
-        [ 'Doppie', 2 ],
+        [ 'Doppie', 1 ],
         [ 'Denz', 1 ],
         [ 'pao', 1 ],
         [ 'Tortle', 3 ],
         [ 'Kwos', 3 ],
         [ 'Omi', 1 ],
         [ 'Jeremy', 3 ],
-        [ 'Drei', 2 ],
+        [ 'Drei', 3 ],
         [ 'Sora', 1 ]
     ]
+
+    random.shuffle(players)
 
     teams = [ [], [] ]
 
